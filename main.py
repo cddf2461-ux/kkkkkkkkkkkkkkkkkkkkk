@@ -9,9 +9,10 @@ import string
 # ══════════════════════════════════════════
 #   CONFIGURAÇÃO — edite antes de rodar
 # ══════════════════════════════════════════
-BOT_TOKEN   = "MTU3NTI0NjE2NTQ2NzcyNjAwNA.GqVH3F.zrjkcgXREu4SNWFC_CGHvT_ggQzuPFKf9QZTsk"          # Token do bot no Discord Developer Portal
-BRAWL_API   = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImMwNWYxM2Y1LWMxNDgtNDkyNi1iZWEwLTk5YTg0ZTkyNTYzZSIsImlhdCI6MTc5NTY0MTY5Nywic3ViIjoiZGV2ZWxvcGVyLzMxZDFhOTMyLTdmNGQtNGI5NS04MzE1LTg3NWE0YTljNzUwYiIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiNDUuMTY5LjY3LjIzNCJdLCJ0eXBlIjoiY2xpZW50In1dfQ.6Vr0x-j0aJv3iBmucaMNpezRllUyllEmjgSJyj_xBNlCwvO8CjciGEH83LPMTVhM4dZNVZO9tMqH7tj0j_yE4w"  # brawlapi.com ou API oficial
-CATEGORY_ID = 1521924917417869402# ID da categoria onde criar canais temporários
+import os
+BOT_TOKEN   = os.getenv("MTU3NTI0NjE2NTQ2NzcyNjAwNA.GqVH3F.zrjkcgXREu4SNWFC_CGHvT_ggQzuPFKf9QZTsk")
+BRAWL_API   = os.getenv("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImMwNWYxM2Y1LWMxNDgtNDkyNi1iZWEwLTk5YTg0ZTkyNTYzZSIsImlhdCI6MTc5NTY0MTY5Nywic3ViIjoiZGV2ZWxvcGVyLzMxZDFhOTMyLTdmNGQtNGI5NS04MzE1LTg3NWE0YTljNzUwYiIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiNDUuMTY5LjY3LjIzNCJdLCJ0eXBlIjoiY2xpZW50In1dfQ.6Vr0x-j0aJv3iBmucaMNpezRllUyllEmjgSJyj_xBNlCwvO8CjciGEH83LPMTVhM4dZNVZO9tMqH7tj0j_yE4w")
+CATEGORY_ID = int(os.getenv("1521924917417869402))
 # ══════════════════════════════════════════
 
 intents = discord.Intents.all()
