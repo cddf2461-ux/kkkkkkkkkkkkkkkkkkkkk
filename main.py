@@ -58,7 +58,7 @@ def formatar_jogadores(lista):
 async def buscar_perfil(tag: str):
     """Consulta a API do Brawl Stars para pegar dados do jogador."""
     tag_fmt = tag.upper().replace("#", "%23")
-    url = f"url = f"https://api.brawlapi.com/v1/players/{tag_fmt}""
+   url = f"https://api.brawlapi.com/v1/players/{tag_fmt}""
     headers = {"Authorization": f"Bearer {BRAWL_API}"}
     async with aiohttp.ClientSession() as s:
         async with s.get(url, headers=headers) as r:
