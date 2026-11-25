@@ -51,10 +51,9 @@ def formatar_jogadores(lista):
 
 async def buscar_perfil(tag: str):
     tag_fmt = tag.upper().replace("#", "%23")
-    url = f"https://api.brawlapi.com/v1/players/{tag_fmt}"
-    headers = {"Authorization": f"Bearer {BRAWL_API}"}
+    url = f"https://api.brawlify.com/v1/players/{tag_fmt}"
     async with aiohttp.ClientSession() as s:
-        async with s.get(url, headers=headers) as r:
+        async with s.get(url) as r:
             if r.status == 200:
                 return await r.json()
             return None
