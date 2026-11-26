@@ -11,7 +11,7 @@ const CATEGORY_ID = process.env.CATEGORY_ID || undefined;
 const DATA_FILE = process.env.DATA_FILE || './data.json';
 const EPH = MessageFlags.Ephemeral;
 
-if (!TOKEN) { console.error('Defina a variável TOKEN'); process.exit(1); }
+if (!TOKEN) { console.error('MTU3NTI1NTA2NzkxMTUyODUwOA.GVVLy2.SmReEEGm7g2xmhCKYGKuH_rfMtM5IpQQyXBGwY'); process.exit(1); }
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
